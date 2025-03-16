@@ -1,6 +1,4 @@
 const todoList = [
-    "work one",
-    "work two"
 ];
 
 randerTodoList()
