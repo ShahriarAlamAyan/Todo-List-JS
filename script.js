@@ -1,11 +1,11 @@
 const todoList = [
-//     {
-//     name: 'make dinner',
-//     dueDate: '2025-04-28'
-// },{
-//     name: 'wash dishes',
-//     dueDate: '2025-04-28'
-// }
+    {
+    name: 'make dinner',
+    dueDate: '2025-04-28'
+},{
+    name: 'wash dishes',
+    dueDate: '2025-04-28'
+}
 ];
 
 
@@ -23,12 +23,10 @@ function randerTodoList() {
 
 
         const html = `
-            <p> ${name} ${dueDate} 
-            <button onclick = "
-            todoList.splice(${i}, 1);
-            randerTodoList()"
-            >Delete </button>
-            </p>
+            <div>${name}</div> 
+            <div>${dueDate}</div>
+            <button onclick = "todoList.splice(${i}, 1);
+            randerTodoList()">Delete </button>
             `;
         todoListHTML += html;
     }
@@ -60,6 +58,6 @@ function addTodo() {
 
     randerTodoList()
 }
-
+randerTodoList()
 
 //8:43:00 delete & due date update
