@@ -25,7 +25,7 @@ function randerTodoList() {
         const html = `
             <div>${name}</div> 
             <div>${dueDate}</div>
-            <button onclick = "todoList.splice(${i}, 1);
+            <button class="delete-todo-button" onclick = "todoList.splice(${i}, 1);
             randerTodoList()">Delete </button>
             `;
         todoListHTML += html;
@@ -60,4 +60,4 @@ function addTodo() {
 }
 randerTodoList()
 
-//8:43:00 delete & due date update
+//9:06:00 delete & due date update
